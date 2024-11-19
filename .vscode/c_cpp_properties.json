@@ -1,24 +1,14 @@
 {
     "configurations": [
         {
-            "name": "ESP-IDF",
-            "compilerPath": "${config:idf.toolsPath}/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc",
-            // "compileCommands": "${config:idf.buildPath}/compile_commands.json",
+            "name": "Linux",
             "includePath": [
-                "/home/rm/esp/v5.3/esp-idf/components/**",
-                "${config:idf.espIdfPath}/components/**",
-                "${config:idf.espIdfPathWin}/components/**",
-                "${workspaceFolder}/components/**",
-                "${workspaceFolder}/**"
+                // "/home/ndj320/esp/v5.3/esp-idf/components/**",
+                "/home/krishna/esp/v5.3.1/esp-idf/components/**",
+                
+                "${workspaceFolder}/components/**"
             ],
-            "browse": {
-                "path": [
-                    "${config:idf.espIdfPath}/components",
-                    "${config:idf.espIdfPathWin}/components",
-                    "${workspaceFolder}"
-                ],
-                "limitSymbolsToIncludedHeaders": true
-            }
+            "compilerPath": "${config:idf.toolsPath}/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc"
         }
     ],
     "version": 4

@@ -41,18 +41,5 @@ menu "BLE mesh app Configuration"
         default n
         help 
             Enable BME280 vendor model
-            
-    config BLE_MESH_PROV_LED_INDI_ENABLE
-        bool "Enable Blinking indicator when provsioning"
-        default n
-        help 
-            Enable PROV blinking
-                    
-    config BLE_MESH_PROV_LED_GPIO
-        int "SET the GPIO_NUM for provision status Indicator"
-        depends on BLE_MESH_PROV_LED_INDI_ENABLE
-        default 0
-        help 
-            Choose a GPIO_NUM for PROVISIONING Status indication
 
 endmenu
